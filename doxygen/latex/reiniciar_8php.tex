@@ -1,0 +1,38 @@
+\hypertarget{reiniciar_8php}{}\doxysection{reiniciar.\+php File Reference}
+\label{reiniciar_8php}\index{reiniciar.php@{reiniciar.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{reiniciar_8php_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}
+\item 
+if(! \$r) \mbox{\hyperlink{reiniciar_8php_a83c7f92174110854553de56e7611a44f}{else}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{reiniciar_8php_a8abe176bc41afd728f32ba8c506cbd98}\label{reiniciar_8php_a8abe176bc41afd728f32ba8c506cbd98}} 
+\index{reiniciar.php@{reiniciar.php}!\$r@{\$r}}
+\index{\$r@{\$r}!reiniciar.php@{reiniciar.php}}
+\doxysubsubsection{\texorpdfstring{\$r}{$r}}
+{\footnotesize\ttfamily \$r}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{connect_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn}}-\/>query(\textcolor{stringliteral}{"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{  UPDATE Candidato}}
+\DoxyCodeLine{\textcolor{stringliteral}{  SET votos = 0}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}})}
+
+\end{DoxyCode}
+Requisição que reinicia a contagem de votos no banco de dados \mbox{\Hypertarget{reiniciar_8php_a83c7f92174110854553de56e7611a44f}\label{reiniciar_8php_a83c7f92174110854553de56e7611a44f}} 
+\index{reiniciar.php@{reiniciar.php}!else@{else}}
+\index{else@{else}!reiniciar.php@{reiniciar.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily if (! \$r) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  header(\textcolor{stringliteral}{"{}Location: ./resultado.php"{}})}
+
+\end{DoxyCode}

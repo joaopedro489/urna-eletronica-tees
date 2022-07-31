@@ -9,7 +9,7 @@ $votos = json_decode(file_get_contents('php://input'))->votos;
 // Registra  os votos no banco de dados
 foreach( $votos as $v) {
   $query = sprintf("
-  UPDATE Candidato
+  UPDATE candidato
   SET votos = votos + 1
   WHERE titulo = '%s' and numero = '%s';
   ",

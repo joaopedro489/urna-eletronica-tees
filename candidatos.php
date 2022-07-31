@@ -23,7 +23,7 @@ function getVereadores() {
   // Executa a query para obter vereadores
   $vereadores_query = $conn->query("
   SELECT numero, nome, partido, foto 
-  FROM Candidato
+  FROM candidato
   WHERE titulo = 'vereador';
   ");
   
@@ -63,7 +63,7 @@ function getPrefeitos() {
   // Executa a query para obter prefeitos e vice-prefeitos
   $prefeitos_query = $conn->query("
   SELECT *
-  FROM Candidato INNER JOIN Vice USING (numero)
+  FROM candidato INNER JOIN vice USING (numero)
   WHERE titulo = 'prefeito';
   ");
   

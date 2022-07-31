@@ -13,7 +13,7 @@ $var = [
 //$var = json_encode($candidatos);
 // Retorna um json contendo os dados dos candidatos
 header('Content-Type: application/json; charset=utf-8');
-echo json_encode($var, JSON_UNESCAPED_UNICODE);
+echo json_encode($var, JSON_PARTIAL_OUTPUT_ON_ERROR);
 
 /**
  * Retorna um objeto contendo o nome, título e número de todos os vereadores

@@ -20,7 +20,6 @@ function getVereadores() {
   // Conecta com o banco de dados
   include ('connect.php'); 
 
-  echo 'teste';
   // Executa a query para obter vereadores
   $vereadores_query = $conn->query("
   SELECT numero, nome, partido, foto 
@@ -28,9 +27,6 @@ function getVereadores() {
   WHERE titulo = 'vereador';
   ");
 
-  echo 'uepa';
-
-  echo 'teste 2';
   // Retorna erro em caso de falha na query
   if(!$vereadores_query) {
     http_response_code(500);
@@ -47,9 +43,6 @@ function getVereadores() {
     unset($vereadores['candidatos'][$row['numero']]['numero']);
     $row = $vereadores_query->fetch_assoc();
   } while ( $row != null);
-
-  echo 'fim';
-  print_r($vereadores);
   
   return $vereadores;
 }
@@ -70,7 +63,7 @@ function getPrefeitos() {
   // Executa a query para obter prefeitos e vice-prefeitos
   $prefeitos_query = $conn->query("
   SELECT *
-  FROM candidato INNER JOIN vice USING (numero)
+  FROM Candidato INNER JOIN Vice USING (numero)
   WHERE titulo = 'prefeito';
   ");
   

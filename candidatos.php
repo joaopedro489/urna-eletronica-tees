@@ -88,7 +88,7 @@ function getPrefeitos() {
     $row = $prefeitos_query->fetch_row();
   } while ( $row != null);
   
-  print_r($vereadores);
+  print_r($prefeitos);
 }
 
 ?>

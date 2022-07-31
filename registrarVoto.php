@@ -14,7 +14,7 @@ foreach( $votos as $v) {
   WHERE titulo = '%s' and numero = '%s';
   ",
   mysqli_real_escape_string($conn, $v->etapa),
-  mysqli_real_escape_string($conn, $v->numero),
+  mysqli_real_escape_string($conn, $v->numero)
   );
 
   // Retorna erro em caso de falha na query

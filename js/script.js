@@ -21,8 +21,9 @@ var votoEmBranco = false
 // O ajax acessa o servidor, que retorna uma resposta em json contendo
 // os candidatos. O servidor monta o json a partir do banco de dados.
 // O arquivo etapas.json não é mais necessário.
-ajax('candidatos.php', 'GET', (response) => {
+ajax('http://urna-tees.herokuapp.com/candidatos.php', 'GET', (response) => {
   console.log('response: ' + response)
+  console.log(response)
   etapas = JSON.parse(response)
   console.log(etapas)
 

@@ -2,9 +2,9 @@
 // Gera um objeto com os dados dos vereadores, prefeitos e seus respectivos vice-prefeitos.
 $candidatos = [];
 $vereadoresResponse = getVereadores();
-echo json_encode($vereadoresResponse);
 
 $prefeitosResponse = getPrefeitos();
+echo json_encode($prefeitosResponse);
 array_push($candidatos, $vereadoresResponse);
 array_push($candidatos, $prefeitosResponse);
 //$var = json_encode($candidatos);

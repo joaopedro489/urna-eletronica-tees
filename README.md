@@ -5,6 +5,7 @@ Este repositorio contém o trabalho final de Tópicos Especiais em Engenharia de
 
 ## Acesso a aplicação
 Para acessar a aplicação basta clicar neste endereço: [Urna Eletrônica](http://urna-tees.herokuapp.com)
+
 Obs.: Recomenda-se que atualize a página caso aparente ter algum bug, devido que o heroku apresenta uma demora para inicializar o banco de dados.
 
 ## Rotas da aplicação

@@ -21,13 +21,13 @@ function getVereadores() {
   include ('connect.php'); 
 
   echo 'teste';
-  echo $conn;
   // Executa a query para obter vereadores
   $vereadores_query = $conn->query("
   SELECT numero, nome, partido, foto 
-  FROM candidato
+  FROM Candidato
   WHERE titulo = 'vereador';
   ");
+
   echo 'uepa';
   echo $vereadores_query;
   

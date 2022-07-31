@@ -4,6 +4,8 @@
 $candidatos = [];
 $vereadoresResponse = getVereadores();
 $prefeitosResponse = getPrefeitos();
+print_r($vereadoresResponse);
+print_r($prefeitosResponse);
 array_push($candidatos, $vereadoresResponse);
 array_push($candidatos, $prefeitosResponse);
 

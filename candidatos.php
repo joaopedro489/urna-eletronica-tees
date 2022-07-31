@@ -1,8 +1,11 @@
 <?php
 
 // Gera um objeto com os dados dos vereadores, prefeitos e seus respectivos vice-prefeitos.
-$candidatos["0"] = getVereadores();
-$candidatos["1"] = getPrefeitos();
+$candidatos = [];
+$vereadoresResponse = getVereadores();
+$prefeitosResponse = getPrefeitos();
+array_push($candidatos, $vereadoresResponse);
+array_push($candidatos, $prefeitosResponse);
 
 // Retorna um json contendo os dados dos candidatos
 header('Content-Type: application/json; charset=utf-8');

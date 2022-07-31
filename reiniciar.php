@@ -5,7 +5,7 @@ include ('connect.php');
 
 /** Requisição que reinicia a contagem de votos no banco de dados */
 $r = $conn->query("
-  UPDATE candidato
+  UPDATE Candidato
   SET votos = 0
 ");
 

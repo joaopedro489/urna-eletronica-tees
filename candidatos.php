@@ -44,7 +44,6 @@ function getVereadores() {
     $row = $vereadores_query->fetch_assoc();
   } while ( $row != null);
   print_r($vereadores);
-  return $vereadores;
 }
 
 /**
@@ -89,8 +88,7 @@ function getPrefeitos() {
     $row = $prefeitos_query->fetch_row();
   } while ( $row != null);
   
-  print_r($prefeitos);
-  return $prefeitos;
+  print_r($vereadores);
 }
 
 ?>

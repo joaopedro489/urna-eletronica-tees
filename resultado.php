@@ -29,7 +29,7 @@ function tabelaVereadores() {
   // Executa a query para obter os resultados das eleições para vereador
   $vereadores = $conn->query("
   SELECT * 
-  FROM candidato
+  FROM Candidato
   WHERE titulo = 'vereador'
   ORDER BY votos DESC, nome ASC;
   ");
@@ -43,7 +43,7 @@ function tabelaVereadores() {
   // Executa a query para obter o número de votos do vereador mais votado
   $max_votos_vereador = $conn->query("
   SELECT max(votos)
-  FROM candidato
+  FROM Candidato
   WHERE titulo = 'vereador';
   ");
   
@@ -101,9 +101,9 @@ function tabelaPrefeitos() {
   // Executa a query para obter os resultados das eleições para prefeito
   $prefeitos = $conn->query("
   SELECT *
-  FROM candidato INNER JOIN vice USING (numero)
+  FROM Candidato INNER JOIN vice USING (numero)
   WHERE titulo = 'prefeito'
-  ORDER BY votos DESC, candidato.nome ASC;
+  ORDER BY votos DESC, Candidato.nome ASC;
   ");
   
   // Retorna erro em caso de falha na query
@@ -115,7 +115,7 @@ function tabelaPrefeitos() {
   // Executa a query para obter o número de votos do prefeito mais votado
   $max_votos_prefeito = $conn->query("
   SELECT max(votos)
-  FROM candidato
+  FROM Candidato
   WHERE titulo = 'prefeito';
   ");
   

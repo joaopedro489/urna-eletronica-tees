@@ -6,6 +6,7 @@ $vereadoresResponse = getVereadores();
 $prefeitosResponse = getPrefeitos();
 array_push($candidatos, $vereadoresResponse);
 array_push($candidatos, $prefeitosResponse);
+print_r($candidatos);
 $var = json_encode($candidatos);
 // Retorna um json contendo os dados dos candidatos
 header('Content-Type: application/json; charset=utf-8');

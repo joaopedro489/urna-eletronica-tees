@@ -29,8 +29,8 @@ function getVereadores() {
   ");
 
   echo 'uepa';
-  echo $vereadores_query;
-  
+
+  echo 'teste 2';
   // Retorna erro em caso de falha na query
   if(!$vereadores_query) {
     http_response_code(500);
@@ -47,6 +47,9 @@ function getVereadores() {
     unset($vereadores['candidatos'][$row['numero']]['numero']);
     $row = $vereadores_query->fetch_assoc();
   } while ( $row != null);
+
+  echo 'fim';
+  print_r($vereadores);
   
   return $vereadores;
 }

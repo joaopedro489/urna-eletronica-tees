@@ -19,6 +19,8 @@ function getVereadores() {
 
   // Conecta com o banco de dados
   include ('connect.php'); 
+
+  echo 'teste';
   
   // Executa a query para obter vereadores
   $vereadores_query = $conn->query("
@@ -26,6 +28,8 @@ function getVereadores() {
   FROM candidato
   WHERE titulo = 'vereador';
   ");
+
+  echo $vereadores_query;
   
   // Retorna erro em caso de falha na query
   if(!$vereadores_query) {

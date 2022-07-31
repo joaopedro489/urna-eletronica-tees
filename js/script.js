@@ -22,6 +22,7 @@ var votoEmBranco = false
 // os candidatos. O servidor monta o json a partir do banco de dados.
 // O arquivo etapas.json não é mais necessário.
 ajax('candidatos.php', 'GET', (response) => {
+  console.log('response: ' + response)
   etapas = JSON.parse(response)
   console.log(etapas)
 

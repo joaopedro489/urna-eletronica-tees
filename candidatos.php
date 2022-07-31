@@ -6,10 +6,9 @@ $vereadoresResponse = getVereadores();
 $prefeitosResponse = getPrefeitos();
 array_push($candidatos, $vereadoresResponse);
 array_push($candidatos, $prefeitosResponse);
-print_r(json_encode($candidatos));
+
 // Retorna um json contendo os dados dos candidatos
-header('Content-Type: application/json; charset=utf-8');
-echo json_encode($candidatos);
+echo json_encode(['200' => $candidatos]);
 
 /**
  * Retorna um objeto contendo o nome, título e número de todos os vereadores

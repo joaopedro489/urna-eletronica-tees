@@ -174,9 +174,6 @@ function botaoReiniciar() {
 
 <style>
 
-body {
-  background-color: lightgray;
-}
 
 h1 {
   text-align: center;

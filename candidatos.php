@@ -4,22 +4,10 @@ $candidatos = [];
 $vereadoresResponse = getVereadores();
 
 $prefeitosResponse = getPrefeitos();
-array_push($candidatos, $vereadoresResponse);
-array_push($candidatos, $prefeitosResponse);
 // print_r($candidatos);
 $var = [
-  [
-    "nome" => "João",
-    "partido" => "PSDB",
-    "numero" => "1",
-    "votos" => "0"
-  ],
-  [
-    "nome" => "Maria",
-    "partido" => "PSDB",
-    "numero" => "2",
-    "votos" => "0"
-  ]
+  "vereadores" => $vereadoresResponse,
+  "prefeitos" => $prefeitosResponse
   ];
 
 //$var = json_encode($candidatos);

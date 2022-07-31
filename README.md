@@ -1,7 +1,7 @@
 # Trabalho Final - Tópicos Especiais em Engenharia de Software
 **Feito por: Filipe Castelo Branco - 119066195 e João Pedro Cavalcante - 119052154**
 
-Este repositorio contém o trabalho final de engenharia de software do curso de Ciência da Computação da Universidade Federal do Rio de Janeiro.
+Este repositorio contém o trabalho final de Tópicos Especiais em Engenharia de Software do curso de Ciência da Computação da Universidade Federal do Rio de Janeiro.
 
 ## Acesso a aplicação
 Para acessar a aplicação basta clicar neste endereço: [Urna Eletrônica](http://urna-tees.herokuapp.com)
